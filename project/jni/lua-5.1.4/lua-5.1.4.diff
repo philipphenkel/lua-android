@@ -1,0 +1,9 @@
+diff -r lua-5.1.4/src/llex.c lua-5.1.4-android/src/llex.c
+179c179
+<   struct lconv *cv = localeconv();
+---
+>   //struct lconv *cv = localeconv();
+181c181
+<   ls->decpoint = (cv ? cv->decimal_point[0] : '.');
+---
+>   ls->decpoint = '.';//(cv ? cv->decimal_point[0] : '.');
